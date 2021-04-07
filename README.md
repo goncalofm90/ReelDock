@@ -1,4 +1,4 @@
-# ReelDock
+# ReelDock 🎥
 
 ## https://reeldock.netlify.app/
 
