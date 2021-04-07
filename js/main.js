@@ -43,7 +43,6 @@ getMovie = () => {
   axios
     .get(`https://www.omdbapi.com?i=${movieId}&apikey=thewdb`)
     .then((response) => {
-      console.log(response);
       let movie = response.data;
       let output = `<div class="row">
           <div class="col-md-4">
@@ -63,15 +62,15 @@ getMovie = () => {
           </div>
       </div>
       <div class="row">
-      <div class= "well">
-      <h3 class="text-center">Plot</h3>
-      ${movie.Plot}
-      <hr>
-      <div class="buttons">
-      <a href="https://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-primary">IMDB</a>
-      <a href="index.html" class="btn btn-default">Back</a>
-      </div>
-      </div>
+        <div class= "well">
+          <h3 class="text-center">Plot</h3>
+            ${movie.Plot}
+              <hr>
+                <div class="buttons">
+                  <a href="https://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-primary">IMDB</a>
+                  <a href="index.html" class="btn btn-default">Back</a>
+                </div>
+         </div>
       </div>
        `;
 
