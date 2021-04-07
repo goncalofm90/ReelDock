@@ -1,0 +1,37 @@
+#movies img,
+#movie img {
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  #movies .col-md-3 .well {
+    height: 500px;
+    margin: 1em;
+    animation: slide 1s forwards;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translatex(100%);
+    }
+    100% {
+      transform: translatex(0%);
+    }
+  }
+  #movies .col-md-3 img {
+    height: 300px;
+  }
+  div {
+    margin: 1em;
+    animation: slide 1s forwards;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .row div {
+    margin: 0 auto;
+  }
+}
