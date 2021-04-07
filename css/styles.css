@@ -25,13 +25,35 @@
     margin: 1em;
     animation: slide 1s forwards;
   }
+}
 
-  .buttons {
-    display: flex;
-    justify-content: center;
-  }
+.buttons {
+  display: flex;
+  justify-content: center;
+}
 
-  .row div {
-    margin: 0 auto;
+.row div {
+  margin: 0 auto;
+}
+
+.navbar-header {
+  margin: 1em;
+  animation: fade 3s forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0%;
   }
+  100% {
+    opacity: 100%;
+  }
+}
+.navbar-header a {
+  text-decoration: none;
+}
+
+.navbar-header img {
+  width: 2em;
+  height: 2em;
 }
